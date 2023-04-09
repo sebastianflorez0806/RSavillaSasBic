@@ -8,12 +8,14 @@
   --text-color: #212529;
   --text-color-secondary: #6c757d;
   --primary-color: #a5ce1c;
+  --primary-highligth: #d8ea9d;
   --secondary-color: #4a8cb0;
   --tertiary-color: #f9fb6a;
   --quaternary-color: #c5b667;
   --quinary-color: #5d5d5f;
   --primary-color-text: #ffffff;
-  --font-family: Roboto, Signika, sans-serif;
+  --font-family: Signika, Roboto, sans-serif;
+  --font-family-secondary: Roboto, Signika, sans-serif;
   --surface-0: #ffffff;
   --surface-50: #f9fafb;
   --surface-100: #f8f9fa;
@@ -54,7 +56,7 @@
   box-sizing: border-box;
 }
 .p-component {
-  font-family: "Roboto", "Signika", sans-serif;
+  font-family: "Signika", "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -77,7 +79,7 @@
 }
 .p-link {
   font-size: 1rem;
-  font-family: "Roboto", "Signika", sans-serif;
+  font-family: "Signika", "Roboto", sans-serif;
   border-radius: 4px;
 }
 .p-link:focus {
@@ -255,7 +257,7 @@
   .p-autocomplete-multiple-container
   .p-autocomplete-input-token
   input {
-  font-family: "Roboto", "Signika", sans-serif;
+  font-family: "Signika", "Roboto", sans-serif;
   font-size: 1rem;
   color: #212529;
   padding: 0;
@@ -771,7 +773,7 @@ p-checkbox.ng-dirty.ng-invalid > .p-checkbox > .p-checkbox-box {
   padding: 0.25rem 0;
 }
 .p-chips .p-chips-multiple-container .p-chips-input-token input {
-  font-family: "Roboto", "Signika", sans-serif;
+  font-family: "Signika", "Roboto", sans-serif;
   font-size: 1rem;
   color: #212529;
   padding: 0;
@@ -1200,7 +1202,7 @@ p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch {
   border-color: #f44336;
 }
 .p-inputtext {
-  font-family: "Roboto", "Signika", sans-serif;
+  font-family: "Signika", "Roboto", sans-serif;
   font-size: 1rem;
   color: #495057;
   background: #fff;
@@ -6903,10 +6905,10 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 }
 .p-terminal .p-terminal-input {
   font-size: 1rem;
-  font-family: "Roboto", "Signika", sans-serif;
+  font-family: "Signika", "Roboto", sans-serif;
 }
 .p-breadcrumb .p-breadcrumb-chevron {
-  font-family: "Roboto", "Signika", sans-serif;
+  font-family: "Signika", "Roboto", sans-serif;
 }
 .p-breadcrumb .p-breadcrumb-chevron:before {
   content: "/";

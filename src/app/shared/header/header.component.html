@@ -1,9 +1,12 @@
-<div class="flex flex-row justify-content-between align-items-center flex-wrap gap-2 px-3 py-2 shadow-custom">
-    <span class="flex flex-row gap-2 align-items-center">
+<div class="topnav surface-0 flex flex-row justify-content-between align-items-center flex-wrap gap-2 px-3 h-4rem shadow-custom">
+    <span class="flex flex-row gap-2 align-items-center py-1">
         <img src="../../../assets/images/logo-sevilla.png" alt="Logo" height="48px" width="auto">
-        <span class="font-semibold text-4xl">R. Sevilla</span>
+        <span class="font-semibold text-4xl">R. Sevilla SAS BIC</span>
     </span>
-    <span class="flex flex-row gap-2 px-2 py-2">
-        <span class="primary-on-hover border-round cursor-pointer hover:underline px-2 py-1" *ngFor="let enlace of enlaces" [routerLink]="enlace.routerLink" routerLinkActive="underline font-bold">{{enlace.label}}</span>
-    </span>
+    <div class="flex flex-row h-full px-2 align-items-center">
+        <ng-container *ngFor="let enlace of enlaces" >
+            <app-menu-item [enlace]="enlace" class="h-full"></app-menu-item>
+        </ng-container>
+        
+    </div>
 </div>

@@ -1,0 +1,10 @@
+.custom-panel{
+    .p-scrollpanel-bar {
+        background-color: var(--quaternary-color);
+    }
+    .p-scrollpanel-content{
+        height: calc(100% + 18px);
+        width: calc(100% + 18px);
+        padding: 0 0 18px 0;
+    }
+}

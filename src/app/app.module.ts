@@ -8,6 +8,7 @@ import { WorkComponent } from './work/work.component';
 
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { MenuItemComponent } from './shared/header/menu-item/menu-item.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HeaderComponent } from './shared/header/header.component';
     AppComponent,
     WorkComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,
