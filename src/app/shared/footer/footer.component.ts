@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   socialMedias = [
-    { icon: "../../../assets/images/instagram.svg", url: "https://www.instagram.com/r.savillasas/" },
-    { icon: "../../../assets/images/facebook.svg", url: "https://www.facebook.com/RSavillaSASBIC" },
-    { icon: "../../../assets/images/linkedin.svg", url: "" }, //Preguntar URL de Linkedin
+    { icon: "pi pi-instagram", url: "https://www.instagram.com/r.savillasas/" },
+    { icon: "pi pi-facebook", url: "https://www.facebook.com/RSavillaSASBIC" },
+    { icon: "pi pi-linkedin", url: "" }, //Preguntar URL de Linkedin
   ]
 
   datos = [

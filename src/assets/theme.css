@@ -8,6 +8,7 @@
   --text-color: #212529;
   --text-color-secondary: #6c757d;
   --primary-color: #a5ce1c;
+  --navbar-color: black;
   --primary-highligth: #d8ea9d;
   --secondary-color: #4a8cb0;
   --tertiary-color: #f9fb6a;
@@ -5725,7 +5726,14 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
+  p-menubarsub {
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    top: 4rem;
+  }
+
   .p-menubar {
     position: relative;
   }

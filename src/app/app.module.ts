@@ -1,28 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { PrimengModule } from './primeng/primeng.module';
 import { AppRoutingModule } from './app-routing.module';
-import { WorkComponent } from './work/work.component';
-
-import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { MenuItemComponent } from './shared/header/menu-item/menu-item.component';
+import { WorkComponent } from './work/work.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HomeComponent } from './home/home.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     WorkComponent,
     FooterComponent,
-    HeaderComponent,
-    MenuItemComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     PrimengModule,
-    AppRoutingModule,    
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

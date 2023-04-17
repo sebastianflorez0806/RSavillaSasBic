@@ -1,4 +1,4 @@
-<footer class="caption flex flex-row flex-wrap gap-2 justify-content-center px-3 py-2 bg-quinary">
+<footer class="caption flex flex-row flex-wrap gap-2 justify-content-center px-3 py-2">
 
     <ng-container *ngFor="let dato of datos let last=last">
         <div class="flex flex-row align-items-center gap-2">
@@ -7,10 +7,10 @@
         </div>
     </ng-container>
 
-    <div class="flex flex-row gap-2 px-3">
+    <div class="flex flex-row gap-3 px-3 align-items-center">
         <ng-container *ngFor="let socialMedia of socialMedias">
-            <a [href]="socialMedia.url" target="_blank">
-                <img class="social-media-icon" [src]="socialMedia.icon" alt="">
+            <a class="text-0" [href]="socialMedia.url" target="_blank">
+                <i [class]="socialMedia.icon" class="text-xl"></i>
             </a>
         </ng-container>
     </div>
