@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -6,8 +6,7 @@ import { MenuItem } from 'primeng/api';
   templateUrl: './navmenu.component.html',
   styleUrls: ['./navmenu.component.css']
 })
-export class NavmenuComponent {
-
+export class NavmenuComponent implements OnInit {
   items: MenuItem[];
 
   constructor() {
@@ -20,7 +19,19 @@ export class NavmenuComponent {
       {
         label: 'Portafolio',
         icon: 'pi pi-briefcase',
-        routerLink: '/portfolio'
+        routerLink: '/portfolio',
+        items: [
+          {
+            label: 'Catálogo',
+            icon: 'pi pi-list',
+            routerLink: '/catalog'
+          },
+          {
+            label: 'Proyectos',
+            icon: 'pi pi-folder-open',
+            routerLink: '/projects'
+          }
+        ]
       },
       {
         label: 'Acerca de',
@@ -33,6 +44,10 @@ export class NavmenuComponent {
         routerLink: '/contact'
       }
     ];
+  }
+
+  ngOnInit() {
+
   }
 
 }

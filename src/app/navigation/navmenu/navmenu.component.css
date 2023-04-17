@@ -2,17 +2,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #a5ce1c;
+  background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  border-bottom-left-radius: 3px;
 }
 
-.logo {
-  margin-right: 20px;
+.navbar-container:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #a5ce1c;
+}
+
+.logo:hover {
+  background-color: #a5ce1c;
+  color: #000;
+}
+
+.logo a:hover {
+  color: #fff;
 }
 
 .logo img {
@@ -20,8 +38,40 @@
   height: auto;
 }
 
+.title-logo {
+  margin-right: 0px;
+}
+
 :host ::ng-deep .p-menubar {
   background-color: transparent;
+  color: #fff;
+}
+
+:host ::ng-deep .p-menubar li {
+  border-radius: 20px;
+}
+
+:host ::ng-deep .p-menubar li:hover {
+  background-color: #a5ce1c;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-container {
+    display: block;
+  }
+
+  .logo a {
+    margin-left: 380px;
+  }
+
+  /*
+  :host ::ng-deep .p-menubar {
+    margin-left: 450px;
+  }
+  */
+  :host ::ng-deep .p-menubar li {
+    border-radius: 0px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -29,16 +79,45 @@
     display: block;
   }
 
+  .logo a {
+    margin-left: 310px;
+  }
+
+  /*
+  :host ::ng-deep .p-menubar {
+    margin-left: 380px;
+  }
+  */
+
+  :host ::ng-deep .p-menubar li {
+    border-radius: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .navbar-container {
     display: block;
   }
+
+  .logo a {
+    margin-left: 200px;
+  }
+
+  :host ::ng-deep .p-menubar li {
+    border-radius: 0px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .navbar-container {
     display: block;
+  }
+
+  .logo a {
+    margin-left: 90px;
+  }
+
+  :host ::ng-deep .p-menubar li {
+    border-radius: 0px;
   }
 }
