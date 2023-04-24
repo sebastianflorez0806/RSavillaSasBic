@@ -1,13 +1,12 @@
-.background::before {
+.background {
     content: "";
     background-image: url('../../assets/images/FondoHome1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
 }
