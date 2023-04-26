@@ -1,5 +1,0 @@
-.main-container {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 4rem calc(100vh - 4rem);
-}

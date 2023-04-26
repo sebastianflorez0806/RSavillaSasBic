@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
-import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +10,8 @@ import { filter } from 'rxjs';
 export class HeaderComponent {
 
   tapnavVariant: boolean = false;
+  @Input() transparent: boolean = false; //Estilos al padre
+  @Input() hide: boolean = false;//Estilos al padre
   enlaces: MenuItem[] = [
     { routerLink: "/home", label: "Inicio", icon: "pi pi-home" }, //Introducción
     //{routerLink: "/work",label:"Nuestro trabajo"}, // oferecer servicio como gestores de material reciclable y apoyo a las empresas como consultores 
@@ -34,7 +35,7 @@ export class HeaderComponent {
     this.router.events
       .subscribe((event) => {
         if(event instanceof NavigationEnd) {
-          const url: string = event.url;
+          const url: string = event.urlAfterRedirects;
           this.tapnavVariant = url.startsWith("/home");
         }
       })
