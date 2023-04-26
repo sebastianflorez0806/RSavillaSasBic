@@ -9,6 +9,7 @@ import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -20,6 +21,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     FooterComponent,
     HomeComponent,
     NavigationComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
