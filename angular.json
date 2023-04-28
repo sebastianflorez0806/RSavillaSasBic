@@ -101,5 +101,12 @@
         }
       }
     }
+  },
+  "cli": {
+<<<<<<< HEAD
+    "analytics": "8f1ff97d-4676-4f89-a404-13b71fa35a25"
+=======
+    "analytics": "9c23ea3b-bb56-4ac3-99f7-b08f34038d57"
+>>>>>>> test
   }
 }
