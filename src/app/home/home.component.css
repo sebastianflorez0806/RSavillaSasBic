@@ -1,5 +1,4 @@
 .container-home {
-  content: "";
   height: 100vh;
   width: 100%;
   background-image: url("../../assets/images/leaves-home.jpg");
@@ -31,7 +30,7 @@
 Aqui inician los estilos de los efectos cards
 */
 
-.container-detail::before {
+.container-detail {
   display: flex;
   justify-content: center;
   align-items: center;

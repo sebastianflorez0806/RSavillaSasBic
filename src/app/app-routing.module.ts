@@ -2,12 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WorkComponent } from './work/work.component';
 import { HomeComponent } from './home/home.component';
-// HEAD
 import { ManagementComponent } from './management/management.component';
-
 import { NavigationComponent } from './navigation/navigation.component';
-import { AboutComponent } from './about/about.component';
-// ae51a11fbbb7a8052cebc191cf587b42db63ad6f
 
 
 
