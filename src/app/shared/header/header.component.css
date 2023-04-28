@@ -1,10 +1,11 @@
 .topnav {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 3px 12px;
   width: 100%;
   height: 4rem;
-  transition: top 0.4s ease-in-out;
+  transition: top 0.5s ease-in-out;
   top: 0;
   position: fixed;
+  text-shadow: 0 0 5px hsl(0, 0%, 100%);
 }
 
 :host {
@@ -17,10 +18,16 @@
 }
 
 .bg-black {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
   color: white;
 }
 
 .bg-transparent {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.logoImg:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: 0.5s;
 }
