@@ -1,3 +1,5 @@
+import { MenuModule } from 'primeng/menu';
+import { CalendarModule } from 'primeng/calendar';
 import { PanelModule } from 'primeng/panel';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,8 +12,11 @@ import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
-import { MenuModule } from 'primeng/menu';
-import { CalendarModule } from 'primeng/calendar';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ManagementComponent } from './management/management.component';
+
+
+
 
 
 @NgModule({
@@ -21,6 +26,9 @@ import { CalendarModule } from 'primeng/calendar';
     WorkComponent,
     FooterComponent,
     HomeComponent,
+    NavigationComponent,
+    ManagementComponent,
+
   ],
   imports: [
     BrowserModule,
